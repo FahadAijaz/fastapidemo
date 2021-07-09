@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import linear_kernel
 import re
 app = FastAPI()
-
+# initilaized
 
 @app.post("/", response_model=SimilarityScoreCollection)
 async def infer_submerchant(train_description_rows: List[str], train_submerchant_rows: List[str], test_rows: List[str]):
